@@ -14,9 +14,14 @@ We utilized our goals that we initially set 4 months ago as our inspiration to i
 
 ## Objectives
 ```md
-GIVEN I am hungry
-WHEN I input my ingredient
-THEN I will find recipes that contain the ingredient and able to search for the nutritional info
+GIVEN I am allergic to certain foods
+WHEN I input my preferred categories
+THEN I will find recipes that contain the listed specifications. 
+GIVEN that I want to save my user information 
+WHEN I want to reference previously searched/saved receipes
+THEN I am able to create a new user with saved data being encrypted
+GIVEN that I want to plan my weekly calendar
+THEN I am able to save receipes for different days of the week.
 ```
 
 ### **Acceptance Criteria**
