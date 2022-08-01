@@ -1,5 +1,21 @@
 # Healthy-Helper-v2
 
+## Table of Contents
+
+- [Healthy-Helper-v2](#healthy-helper-v2)
+  - [Table of Contents](#table-of-contents)
+  - [Purpose](#purpose)
+    - [Challenges:](#challenges)
+    - [Successes:](#successes)
+  - [Objectives](#objectives)
+  - [User Story](#user-story)
+    - [**Additional Criteria**](#additional-criteria)
+    - [Mock-Up](#mock-up)
+    - [Website](#website)
+  - [Built With](#built-with)
+  - [Collaborators](#collaborators)
+  - [License](#license)
+
 ## Purpose
 The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as allergy specifications, diet preferences and ability to save user information and receipes.
 
@@ -38,7 +54,7 @@ Additionally, the latest updates allow for the user to plan weeekly meals, with 
 
 **Grading Requirements**
 
-- If a project submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+- [x] If a project submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
 
 - [x] A repository that has no code
 
@@ -52,13 +68,13 @@ Additionally, the latest updates allow for the user to plan weeekly meals, with 
 
 **Technical Acceptance Criteria: 25%**
 
-- Satisfies the following code requirements:
+  Satisfies the following code requirements:
 
 - [x] Application uses React for the front end.
 
-- [x] Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
+- [ ] Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
 
-- [x] Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
+- [ ] Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
 
 - [x] Application includes user authentication using JWT.
 
@@ -115,26 +131,10 @@ Fulfilling all three of the following requirements to turn your app into a PWA w
 
 ### Mock-Up
 
-![image](./assets/images/demo_healthy_helper.gif)
+![image](.)
 
 ### Website
-https://sam-pettyjohn.github.io/healthy-helper/
-
-## Table of Contents
-
-- [Healthy-Helper-v2](#healthy-helper-v2)
-  - [Purpose](#purpose)
-    - [Challenges:](#challenges)
-    - [Successes:](#successes)
-  - [Objectives](#objectives)
-  - [User Story](#user-story)
-    - [**Additional Criteria**](#additional-criteria)
-    - [Mock-Up](#mock-up)
-    - [Website](#website)
-  - [Table of Contents](#table-of-contents)
-  - [Built With](#built-with)
-  - [Collaborators](#collaborators)
-  - [License](#license)
+XXXX
 
 ## Built With
 
