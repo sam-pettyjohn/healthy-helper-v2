@@ -25,24 +25,13 @@ THEN I am able to create a new user with saved data being encrypted
 GIVEN that I want to plan my weekly calendar
 THEN I am able to save receipes for different days of the week.
 ```
+## User Story 
 
-### **Acceptance Criteria**
+Healthy Helper Version 2.0 seeks to help enhance the audience base by incorporating new categorization features to specifiy diet restirictions or food alleriges. 
 
-GIVEN I enter an ingredient
-- [x] WHEN I open the recipe information
-<br>THEN I am presented with a list of recipes that contain the ingredient searches for
+New features also include ability to save user information such as first and last name and email to allow opportunity to share future company deals or promotions.
 
-- [x] WHEN I click on a recipe
-<br>THEN I am presented with a MODAL that includes total required ingredients and cooking instructions
-
-- [x] WHEN I click on the food
-<br>THEN I can see the nutritional information
-
-- [x] WHEN I click the search button
-<br>THEN the text for that ingredient is saved in local storage
-
-- [x] WHEN I refresh the page
-<br>THEN the saved events persist
+Additionally, the latest updates allow for the user to plan weeekly meals, with ingredient list and nutritional values incorporated.
 
 
 ### **Additional Criteria**
@@ -138,7 +127,7 @@ https://sam-pettyjohn.github.io/healthy-helper/
     - [Challenges:](#challenges)
     - [Successes:](#successes)
   - [Objectives](#objectives)
-    - [**Acceptance Criteria**](#acceptance-criteria)
+  - [User Story](#user-story)
     - [**Additional Criteria**](#additional-criteria)
     - [Mock-Up](#mock-up)
     - [Website](#website)
