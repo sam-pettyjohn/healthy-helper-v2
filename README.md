@@ -1,3 +1,5 @@
+![MIT](https://img.shields.io/badge/License-MIT-blue)
+
 # Healthy-Helper-v2
 
 ## Table of Contents
