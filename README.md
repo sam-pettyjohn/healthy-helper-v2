@@ -79,11 +79,13 @@ Additionally, the latest updates allow for the user to plan weeekly meals, with 
 - [x] Application includes user authentication using JWT.
 
 **Concept 10%**
+
 Application should originate from a unique and novel idea.
 
     - Your group should clearly and concisely articulate your project idea.
 
 **Deployment: 20%**
+
     - Application deployed at live URL on Heroku and loads with no errors.
 
     - Application GitHub URL submitted.
@@ -91,6 +93,7 @@ Application should originate from a unique and novel idea.
     - Portfolio at live URL submitted, featuring project.
 
 **Repository Quality: 10%**
+
     - Repository has a unique name.
 
     - Repository follows best practices for file structure and naming conventions.
@@ -102,18 +105,20 @@ Application should originate from a unique and novel idea.
     - Repository contains a high-quality README file with description, screenshot, and link to deployed application.
 
 **Application Quality: 15%**
- - Application user experience is intuitive and easy to navigate.
-
- - Application user interface style is clean and polished.
-
- - Application is responsive.
+ 
+    - Application user experience is intuitive and easy to navigate.
+    
+    - Application user interface style is clean and polished.
+    
+    - Application is responsive.
 
 **Presentation 10%**
- - Your group should present using Google Slides, Powerpoint, or a similar presentation software.
-
- - Every group member should speak during the presentation.
-
- - Your presentation should follow the Project Presentation Template (Links to an external site.).
+  
+    - Your group should present using Google Slides, Powerpoint, or a similar presentation software.
+  
+    - Every group member should speak during the presentation.
+  
+    - Your presentation should follow the Project Presentation Template (Links to an external site.).
 
 **Collaboration 10%**
 There are no major disparities in the number of GitHub contributions among group members.
