@@ -145,9 +145,19 @@ XXXX
 
 - HTML
 - CSS
-    - CSS Frameworks [Bulma](https://bulma.io/documentation/) & [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+    - CSS Frameworks Bulma & Bootstrap
 - JavaScript
-    - [jQuery](https://api.jquery.com/)
+    - jQuery
+- Node.js
+- Express.js
+- GraphQL
+- MySQL
+- React
+- MongoDB
+- Mongoose
+- MERN
+- Heroku
+
 
 *With an emphasis utilizing server-side APIs. For this project, we are utilizing [TheMealDB](https://www.themealdb.com/api.php) and [NutritionIX](https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#heading=h.jpcgv4yap78u).*
 
