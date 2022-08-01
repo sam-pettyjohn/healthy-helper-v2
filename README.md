@@ -11,7 +11,7 @@
     - [Successes:](#successes)
   - [Objectives](#objectives)
   - [User Story](#user-story)
-    - [**Additional Criteria**](#additional-criteria)
+    - [Additional Criteria](#additional-criteria)
     - [Mock-Up](#mock-up)
     - [Website](#website)
   - [Built With](#built-with)
@@ -52,7 +52,7 @@ New features also include ability to save user information such as first and las
 Additionally, the latest updates allow for the user to plan weeekly meals, with ingredient list and nutritional values incorporated.
 
 
-### **Additional Criteria**
+### Additional Criteria
 
 **Grading Requirements**
 
@@ -82,57 +82,57 @@ Additionally, the latest updates allow for the user to plan weeekly meals, with 
 
 **Concept 10%**
 
-Application should originate from a unique and novel idea.
+- [x] Application should originate from a unique and novel idea.
 
     - Your group should clearly and concisely articulate your project idea.
 
 **Deployment: 20%**
 
-    - Application deployed at live URL on Heroku and loads with no errors.
+  - [ ] Application deployed at live URL on Heroku and loads with no errors.
 
-    - Application GitHub URL submitted.
+  - [ ] Application GitHub URL submitted.
 
-    - Portfolio at live URL submitted, featuring project.
+  - [ ] Portfolio at live URL submitted, featuring project.
 
 **Repository Quality: 10%**
 
-    - Repository has a unique name.
+  - [x] Repository has a unique name.
 
-    - Repository follows best practices for file structure and naming conventions.
+  - [x] Repository follows best practices for file structure and naming conventions.
 
-    - Repository follows best practices for class and id naming conventions, indentation, quality comments, etc.
+  - [x] Repository follows best practices for class and id naming conventions, indentation, quality comments, etc.
 
-    - Repository contains multiple descriptive commit messages.
+  - [x] Repository contains multiple descriptive commit messages.
 
-    - Repository contains a high-quality README file with description, screenshot, and link to deployed application.
+  - [x] Repository contains a high-quality README file with description, screenshot, and link to deployed application.
 
 **Application Quality: 15%**
  
-    - Application user experience is intuitive and easy to navigate.
+  - [x] Application user experience is intuitive and easy to navigate.
     
-    - Application user interface style is clean and polished.
+  - [x] Application user interface style is clean and polished.
     
-    - Application is responsive.
+  - [x] Application is responsive.
 
 **Presentation 10%**
   
-    - Your group should present using Google Slides, Powerpoint, or a similar presentation software.
+  - [x] Your group should present using Google Slides, Powerpoint, or a similar presentation software.
   
-    - Every group member should speak during the presentation.
+  - [ ] Every group member should speak during the presentation.
   
-    - Your presentation should follow the Project Presentation Template (Links to an external site.).
+  - [x] Your presentation should follow the Project Presentation Template (Links to an external site.).
 
 **Collaboration 10%**
-There are no major disparities in the number of GitHub contributions among group members.
+- [x] There are no major disparities in the number of GitHub contributions among group members.
 
 **Bonus**
 Fulfilling all three of the following requirements to turn your app into a PWA will add 10 points to your grade. Note that the highest grade you can achieve is still a 100:
 
-    - Uses a web manifest
+  - [ ] Uses a web manifest
 
-    - Uses a service worker for offline functionality
+  - [ ] Uses a service worker for offline functionality
 
-    - Is installable
+  - [ ] Is installable
 
 
 
@@ -161,7 +161,7 @@ XXXX
 - Heroku
 
 
-*With an emphasis utilizing server-side APIs. For this project, we are utilizing [TheMealDB](https://www.themealdb.com/api.php) and [NutritionIX](https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#heading=h.jpcgv4yap78u).*
+(update to newer relevant information) *With an emphasis utilizing server-side APIs. For this project, we are utilizing [TheMealDB](https://www.themealdb.com/api.php) and [NutritionIX](https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#heading=h.jpcgv4yap78u).*
 
 
 ## Collaborators
