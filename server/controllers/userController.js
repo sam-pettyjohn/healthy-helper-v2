@@ -132,5 +132,14 @@ module.exports = {
       },
       createPreferences: function(req, res) {
         preferences = req.body.preferences;
-        // console.log("formulated Obj:", prefereneces);
-      }
+        // console.log("Forumalated Obj: ", preferences);
+      },
+      sendSMS: function(req, res) {
+        client.messages
+          .create({
+            body: req.body.text,
+            from: config.twilioNumber,
+            to: req.body.phone
+          })
+          .then(message => res.json(message.sid));
+      },
