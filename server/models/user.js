@@ -51,7 +51,9 @@ const recipe = new Schema({
             dinner: recipe
         },
         friday: {
-            
+            breakfast: recipe,
+            lunch: recipe,
+            dinner: recipe,
         }
     }
   })
