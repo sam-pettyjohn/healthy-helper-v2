@@ -170,3 +170,35 @@ module.exports = {
           }
         });
       },
+      removeMeal: function(req, res) {
+        let day = req.body.day;
+        let meal = req.body.meal;
+        let mealPath = "weeklymenu." + day + "." + meal;
+        if (day && meal) {
+          db.User.findOneAndUpdate(
+            { email: req.params.user },
+            { $set: { [mealPath]: {} } },
+            (err, dbRemoved) => {
+              if (err) {
+                res.json(err);
+              } else {
+                res.json("one removed");
+              }
+            }
+          );
+        } else {
+          db.User.findOneAndUpdate(
+            { email: req.params.user },
+            { $set: { weeklymenu: "" } },
+            { new: true },
+            (err, dbRemoved) => {
+              if (err) {
+                res.json(err);
+              } else {
+                res.json("all removed");
+              }
+            }
+          );
+        }
+      }
+    };
