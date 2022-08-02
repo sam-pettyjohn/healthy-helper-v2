@@ -143,3 +143,30 @@ module.exports = {
           })
           .then(message => res.json(message.sid));
       },
+      sendEmail: function(req, res) {
+        let email = req.body.email.trim();
+        const transporter = nodemailer.createTransport({
+          host: "smtp.gmail.com",
+          port: 465,
+          secure: true,
+          auth: {
+            user: config.email,
+            pass: config.password
+          }
+        });
+        let mailOptions = {
+          from: "healthyhelperv2.service@gmail.com",
+          to: email,
+          subject: "Your shopping list from Healthy Helper",
+          text: req.body.text.trim()
+        };
+    
+        transporter.sendMail(mailOptions, function(error, info) {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log("Email sent: " + info.response);
+            res.json(info.response);
+          }
+        });
+      },
