@@ -1,9 +1,12 @@
 import React from "react";
 import "./style.css";
 
+// material-ui import
 import Paper from "@material-ui/core/Paper";
 
-
+// WHEN USER selects recipe
+// recipecard expands to show nutrition, prep time, img
+// provide external link to recipe source website
 function Recipe(props) {
   console.log(props);
 

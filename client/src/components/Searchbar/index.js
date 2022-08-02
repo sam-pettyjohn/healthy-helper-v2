@@ -22,7 +22,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-
+// searchbar styling
 const styles = theme => ({
   root: {
     width: "100%"
@@ -122,7 +122,7 @@ class SearchAppBar extends Component {
     toNumber: 48
   };
 
-
+  // firebase checking (auth) if user in db
   componentDidMount() {
     Firebase.auth().onAuthStateChanged(user => {
       if (user && !Firebase.auth().currentUser.isAnonymous) {
@@ -145,6 +145,7 @@ class SearchAppBar extends Component {
     }
   }
 
+  
   handleSearchQuery = event => {
     this.setState({ searchQuery: event.target.value });
   };
@@ -291,6 +292,7 @@ class SearchAppBar extends Component {
     );
   };
 
+  // user defined query GET route for EDAMAM recipes
   getAll(user) {
     API.getDBRecipes(user)
       .then(res => {

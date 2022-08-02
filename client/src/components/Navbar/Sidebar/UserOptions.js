@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
+
 import PropTypes from "prop-types";
 import Firebase from "../../../config/Firebase";
 import API from "../../../utils/API";
@@ -22,41 +23,53 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 
-
+// sidebar user styling
 const styles = theme => ({
   root: {
     display: "flex"
   },
+
   labelSpacing: {
     "letter-spacing": "2px"
   },
+
   formControl: {
     margin: theme.spacing.unit * 3
   },
+
   list: {
     width: 250
   },
+
   button: {
     margin: theme.spacing.unit
   },
+
   group: {
     margin: `${theme.spacing.unit}px 0`
   },
+
   logoutBtn: {
     margin: "15px 8px 8px 0",
     background: "linear-gradient(to right, #2a5298, #1e3c72)"
   },
+
   input: {
     display: "none"
   },
+
   drawerFix: {
     outline: "none !important"
   },
+
   dietRestrictionCustom: {
     marginBottom: "7px"
   }
 });
 
+// WHEN USER is signed in
+// provides sidebar to allow USER to adjust 
+// diet rescriction 
 class TemporaryDrawer extends Component {
   state = {
     left: false,
@@ -126,7 +139,7 @@ class TemporaryDrawer extends Component {
       }
     };
 
-    // console.log(values);
+    // update user preferences in db
     API.updatePref(this.state.currentUser, values).then(() => {
       Swal.fire({
         position: "top-end",

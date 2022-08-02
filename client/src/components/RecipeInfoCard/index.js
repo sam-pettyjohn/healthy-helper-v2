@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./style.css";
 
+// material-ui import
 import Paper from "@material-ui/core/Paper";
 
+// styling for recipe macronutrients
 class SingleRecipe extends Component {
   constructor(props) {
     super(props);

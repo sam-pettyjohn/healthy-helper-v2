@@ -26,7 +26,7 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import Switch from "@material-ui/core/Switch";
 import Grid from "@material-ui/core/Grid";
 
-
+// styling for Login Container
 const styles = theme => ({
   root: {
     display: "flex",
@@ -121,20 +121,24 @@ const dietTypes = [
     value: "balanced",
     label: "Balanced"
   },
+
   {
     value: "low-carb",
     label: "Low Carb"
   },
+
   {
     value: "low-fat",
     label: "Low Fat"
   },
+
   {
     value: "high-protein",
     label: "High Protein"
   }
 ];
 
+// Signup prompts for a new user
 class SimpleMenu extends Component {
   constructor(props) {
     super(props);
@@ -153,8 +157,8 @@ class SimpleMenu extends Component {
       peanut_free: false,
       tree_nut_free: false,
       alcohol_free: false,
-      logInError: "We'll never share your email with anyone else.",
-      signUpError: "We'll never share your email with anyone else."
+      logInError: "We will never share your email with anyone else.",
+      signUpError: "We will never share your email with anyone else."
     };
   }
 
@@ -166,6 +170,7 @@ class SimpleMenu extends Component {
     this.setState({ anchorEl: null });
   };
 
+  // firebase searching to verify if user has already been created
   handleLogin = e => {
     e.preventDefault();
     Firebase.auth()
@@ -289,9 +294,7 @@ class SimpleMenu extends Component {
             className="menuList"
           >
             <MenuItem onClick={this.closeDropdown} className="menuItemLi">
-              <span>
-                <i class="fas fa-sign-in-alt signInIconAlt" />
-              </span>
+              <span><i class="fas fa-sign-in-alt signInIconAlt" /></span>
               Log In
             </MenuItem>
           </Button>

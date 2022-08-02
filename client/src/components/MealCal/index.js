@@ -7,6 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
+// styling for weekly meal calendar 
 const largeStyles = theme => ({
   root: {
     flexGrow: 1,
@@ -18,9 +19,11 @@ const largeStyles = theme => ({
     margin: 10,
     padding: 10,
   },
+
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 90,
     height: 90,
@@ -29,16 +32,17 @@ const largeStyles = theme => ({
     margin: 'auto',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
     alignItems:'center',
     direction:'row'
   },
-
 });
 
 const tabletStyles = theme => ({
@@ -49,9 +53,11 @@ const tabletStyles = theme => ({
     alignItems: 'center',
     textAlign:'center',
   },
+
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 70,
     height: 70,
@@ -60,16 +66,17 @@ const tabletStyles = theme => ({
     justify: 'center',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
     alignItems:'center',
     direction:'row'
   },
-
 });
 
 const mobileStyles = theme => ({
@@ -81,9 +88,11 @@ const mobileStyles = theme => ({
     textAlign:'center',
     margin: 10,
   },
+
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 70,
     height: 70,
@@ -91,9 +100,11 @@ const mobileStyles = theme => ({
     justify: 'center',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
@@ -135,21 +146,20 @@ class InteractiveGrid extends React.Component {
       this.directionCheck();
       styleCheck();
     }.bind(this);
-  }
+  };
 
-  
-directionCheck = function() {
+  directionCheck = function() {
 
-  if (window.innerWidth < 650) {
-    this.setState({
-      direction:'row',
-    });
-  } else {
-    this.setState({
-      direction:'column',
-    });
-  }
-};
+    if (window.innerWidth < 650) {
+      this.setState({
+        direction:'row',
+      });
+    } else {
+      this.setState({
+        direction:'column',
+      });
+    }
+  };
 
   render() {
     const { classes } = this.props;
@@ -170,9 +180,7 @@ directionCheck = function() {
               >
                 {[day, "Breakfast", "Lunch", "Dinner"].map(value => (
                   <Grid key={value} item spacing={4}>
-                    <Paper
-                      className={classes.paper}
-                    >
+                    <Paper className={classes.paper}>
                       {value}
                     </Paper>
                   </Grid>

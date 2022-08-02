@@ -15,6 +15,7 @@ const styles = theme => ({
   }
 });
 
+// searchbar background and positioning
 class Title extends Component {
   render(props) {
     const { classes } = this.props;
@@ -23,9 +24,7 @@ class Title extends Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar className="searchMenuBackground">
-                <Typography
-                  className="title searchbarFix"
-                >
+                <Typography className="title searchbarFix">
                   {this.props.children}
                 </Typography>
           </Toolbar>

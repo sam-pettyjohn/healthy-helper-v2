@@ -21,6 +21,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Button from "@material-ui/core/Button";
 
+// styling for recipe card
 const styles = theme => ({
   card: {
     maxWidth: 285,
@@ -93,6 +94,7 @@ const styles = theme => ({
   }
 });
 
+// 
 class RecipeReviewCard extends Component {
 
   state = {
@@ -125,6 +127,8 @@ class RecipeReviewCard extends Component {
     this.setState({ open: false });
   };
 
+  // macronutrient flip animation
+  // set to image first
   handleCardFlip = e => {
     e.preventDefault();
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
@@ -141,6 +145,7 @@ class RecipeReviewCard extends Component {
     }
   };
 
+  // connecting respective day abbreviation to full day name
   convertDay(original) {
     var newDay;
     switch (original) {
@@ -170,6 +175,7 @@ class RecipeReviewCard extends Component {
     return newDay;
   }
 
+  // user selected day
   handleDayPick = day => {
     let newDay = this.convertDay(day);
     console.log(newDay);
@@ -200,7 +206,6 @@ class RecipeReviewCard extends Component {
           style={{ backgroundColor: color }}
           key={day}
           onClick={() => {
-            console.log("hello");
             this.handleDayPick(day);
           }}
         >

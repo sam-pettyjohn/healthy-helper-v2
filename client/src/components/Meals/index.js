@@ -19,9 +19,11 @@ const largeStyles = theme => ({
     margin: 10,
     padding: 10,
   },
+  
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 90,
     height: 90,
@@ -30,16 +32,17 @@ const largeStyles = theme => ({
     margin: 'auto',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
     alignItems:'center',
     direction:'row'
   },
-
 });
 
 const tabletStyles = theme => ({
@@ -50,9 +53,11 @@ const tabletStyles = theme => ({
     alignItems: 'center',
     textAlign:'center',
   },
+
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 70,
     height: 70,
@@ -62,16 +67,17 @@ const tabletStyles = theme => ({
     margin: 'auto',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
     alignItems:'center',
     direction:'row'
   },
-
 });
 
 const mobileStyles = theme => ({
@@ -83,9 +89,11 @@ const mobileStyles = theme => ({
     textAlign:'center',
     margin: 10,
   },
+
   demo: {
     direction:"row",
   },
+
   paper: {
     width: 70,
     height: 70,
@@ -94,18 +102,20 @@ const mobileStyles = theme => ({
     margin: 'auto',
     alignItems: 'space-around'
   },
+
   control: {
     padding: theme.spacing.unit * 2,
   },
+
   row: {
     margin:5,
     justify:'center',
     alignItems:'center',
     direction:'row'
-  },
-
+  }
 });
-  
+
+// check screen size and adjust display output
 const styleCheck = function() {
 
   if (window.innerWidth < 650) {
@@ -115,9 +125,10 @@ const styleCheck = function() {
   } else {
     return largeStyles;
   }
+
 };
 
-
+// WIP - managing meals that were saved by USER
 class ManageMeals extends Component {
 
  state = {
