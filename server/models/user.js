@@ -16,44 +16,55 @@ const recipe = new Schema({
     _id: false
   });
 
-  // user Schema
-  const userSchema = new Schema({
+// user Schema
+const userSchema = new Schema({
     email: String,
     favorites: [recipe],
     preferences: {
-        vegan: Boolean,
-        vegetarian: Boolean,
-        sugar_conscious: Boolean,
-        peanut_free: Boolean,
-        tree_nut_free: Boolean,
-        alcohol_free: Boolean,
-        dietType: String
+      vegan: Boolean,
+      vegetarian: Boolean,
+      sugar_conscious: Boolean,
+      peanut_free: Boolean,
+      tree_nut_free: Boolean,
+      alcohol_free: Boolean,
+      dietType: String
     },
     weeklymenu: {
-        monday: {
-            breakfast: recipe,
-            lunch: recipe,
-            dinner: recipe
-        }, 
-        tuesday: {
-            breakfast: recipe,
-            lunch: recipe,
-            dinner: recipe
-        },
-        wednesday: {
-            breakfast: recipe,
-            lunch: recipe,
-            dinner: recipe
-        },
-        thursday: {
-            breakfast: recipe,
-            lunch: recipe,
-            dinner: recipe
-        },
-        friday: {
-            breakfast: recipe,
-            lunch: recipe,
-            dinner: recipe,
-        }
+      monday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      tuesday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      wednesday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      thursday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      friday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      saturday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      },
+      sunday: {
+        breakfast: recipe,
+        lunch: recipe,
+        dinner: recipe
+      }
     }
-  })
+  });
+  
