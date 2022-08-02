@@ -73,3 +73,27 @@ module.exports = {
             }
           });
     },
+    updateFavorites: function(req, res) {
+        db.User.findOne({
+          email: req.params.user,
+          favorites: { $in: req.body.fav }
+        }).then(found => {
+          if (found) {
+            db.User.findOneAndUpdate(
+              { email: req.params.user },
+              { $pull: { favorites: req.body.fav } }
+            )
+              .then(dbModel => {
+                res.json(dbModel);
+              })
+              .catch(err => res.status(422).json(err));
+          } else {
+            db.User.findOneAndUpdate(
+              { email: req.params.user },
+              { $addToSet: { favorites: req.body.fav } }
+            )
+              .then(dbModel => res.json(dbModel))
+              .catch(err => res.status(422).json(err));
+          }
+        });
+      },
