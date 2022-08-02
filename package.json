@@ -1,36 +1,26 @@
 {
-  "name": "healthy-helper-v2",
+  "name": "healthy-helper-v2-master",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "healthy-helper-v2",
+  "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sam-pettyjohn/healthy-helper-v2.git"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sam-pettyjohn/healthy-helper-v2/issues"
-  },
-  "homepage": "https://github.com/sam-pettyjohn/healthy-helper-v2#readme",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "axios": "^0.27.2",
-    "bcrypt": "^5.0.1",
+    "concurrently": "^7.3.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.4.7"
-  },
-  "devDependencies": {
-    "concurrently": "^7.3.0",
-    "nodemon": "^2.0.19"
+    "firebase": "^9.9.1",
+    "if-env": "^1.0.4",
+    "immutability-helper": "^3.1.1",
+    "mongoose": "^6.5.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19",
+    "twilio": "^3.80.0"
   }
 }

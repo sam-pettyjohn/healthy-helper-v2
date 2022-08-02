@@ -6,7 +6,7 @@ import Firebase from "./config/Firebase";
 import Dashboard from "./pages/Dashboard";
 import LandingPage from "./pages/LandingPage";
 import NoMatch from "./pages/NoMatch";
-import RecipePage from "./pages/RecipePage";
+import RecipePage from "./pages/RecipePages";
 import HealthyHelper from "./pages/HealthyHelper";
 import Manage from "./pages/ManageMeals";
 
