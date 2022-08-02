@@ -97,3 +97,20 @@ module.exports = {
           }
         });
       },
+      updateMeal: function(req, res) {
+        let day = req.body.day;
+        let meal = req.body.meal;
+        let recipe = req.body.recipe;
+        let mealPath = "weeklymenu." + day + "." + meal;
+        db.User.findOneAndUpdate(
+          { email: req.params.user },
+          { $set: { [mealPath]: recipe } },
+          (err, dbMeal) => {
+            if (err) {
+              res.json(err);
+            } else {
+              res.json("meal changed");
+            }
+          }
+        );
+      },
