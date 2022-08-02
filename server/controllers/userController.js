@@ -114,3 +114,11 @@ module.exports = {
           }
         );
       },
+      updateMenu: function(req, res) {
+        db.User.findOneAndUpdate(
+          { email: req.params.user },
+          { weeklymenu: req.body.weeklyMenu }
+        )
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      },
