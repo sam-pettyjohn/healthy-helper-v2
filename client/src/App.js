@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// firebase auth
 import Firebase from "./config/Firebase";
 
-// import pages
 import Dashboard from "./pages/Dashboard";
 import LandingPage from "./pages/LandingPage";
 import NoMatch from "./pages/NoMatch";

@@ -1,0 +1,66 @@
+.logo {
+    position: absolute !important;
+    max-height: 300px;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -145px;
+    margin-left: -270px;
+    padding: 20px;
+    background: rgba(55, 55, 55, 0.8);
+    border-radius: 20px;
+  }
+  
+  .landingHeader {
+    background: white;
+    height: auto;
+  }
+  
+  .gridWrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background: white;
+    z-index: -1;
+    position: relative;
+  }
+  
+  .gridItem {
+    min-height: 100%;
+    display: inline-grid;
+  }
+  
+  .gridPictures {
+    filter: contrast(0.8);
+    position: relative;
+    z-index: -1;
+  }
+  
+  .imageLeft {
+    box-sizing: border-box;
+    padding: 0 3px 0 6px;
+  }
+  
+  .imageRight {
+    box-sizing: border-box;
+    padding: 0 6px 0 3px;
+  }
+  
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
+  
+  @media (max-width: 715px) {
+    .logo {
+      max-height: 135px;
+      max-width: 270px;
+      top: 50%;
+      left: 50%;
+      margin-top: -87.5px;
+      margin-left: -155px;
+      padding: 20px;
+      background: rgba(55, 55, 55, 0.8);
+    }
+  }
