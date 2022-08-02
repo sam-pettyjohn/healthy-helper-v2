@@ -15,3 +15,6 @@ const recipe = new Schema({
     image: String,
     _id: false
   });
+
+  // user Schema
+  const userSchema = 
