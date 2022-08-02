@@ -1,0 +1,86 @@
+.menuList {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    border: none !important;
+    width: 100%;
+    padding-left: 15px;
+  }
+  
+  .menuItemLi {
+    color: rgb(55, 55, 55) !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    width: 124px !important;
+    height: 26px !important;
+    box-sizing: border-box !important;
+  }
+  
+  .menuItemLi:hover {
+    background-color: transparent !important;
+  }
+  
+  .innerHoverRemovedAlt {
+    background: rgba(55, 55, 55, 0.8) !important;
+  }
+  
+  .menuIconWhite {
+    color: white !important;
+  }
+  
+  .menuPlacement {
+    position: absolute !important;
+    right: 0;
+    z-index: 3;
+    border-radius: 0 !important;
+  }
+  
+  #custom-css-outlined-input-helper-text {
+    color: red;
+  }
+  
+  .popUpPrompt {
+    padding: 20px !important;
+    background: white;
+    outline: none;
+  }
+  
+  .formHelperText {
+    margin-bottom: 20px !important;
+    padding-left: 10px !important;
+  }
+  
+  .formLabelText {
+    margin-top: 20px;
+    padding-left: 10px !important;
+  }
+  
+  .formatPreferences {
+    padding-left: 10px !important;
+  }
+  
+  .dietRestrictionFlexing {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signInIconAlt {
+    width: 25px !important;
+    height: 21px !important;
+  }
+  
+  .fa-sign-in-alt,
+  .fa-user-plus {
+    color: grey;
+    font-size: 20px;
+  }
+  
+  /* MEDIA */
+  @media (max-width: 483px) {
+    .dietRestrictionOptions1 {
+      padding-bottom: 0 !important;
+    }
+    .dietRestrictionOptions2 {
+      padding-top: 0 !important;
+    }
+  }

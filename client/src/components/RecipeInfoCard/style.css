@@ -1,0 +1,98 @@
+.dashboardRecepe {
+    width: 50%;
+    background-color: rgb(62, 65, 64) !important;
+    padding: 5px;
+    margin: 120px auto 20px auto;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 70px;
+  }
+  .dashboardRecepe > div {
+    align-items: center;
+  }
+  .card-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid rgb(137, 176, 163);
+    position: absolute;
+    top: -250px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .bodyCard {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .bodyCard > div {
+    width: 45%;
+    margin: 0 1px;
+    color: grey;
+    font-size: 20px;
+    text-align: left;
+  }
+  h3 > i {
+    color: white;
+  }
+  
+  /* Background Styling */
+  .bg-header {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .bg-header > h1 {
+    width: 50%;
+    padding-bottom: 20px;
+    margin: 150px auto 30px auto;
+  }
+  .bg-header > h1 > a {
+    color: white;
+    font-family: "Amatic SC", cursive;
+    text-decoration: none;
+  }
+  .bg-header > h1 > a > i {
+    color: white;
+  }
+  .bg-header > h3 {
+    color: rgba(255, 255, 255, 0.582);
+    font-family: "Amatic SC", cursive;
+  }
+  .bg-header > h3 > a {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  
+  i {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+  .bold {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .fa-chevron-right {
+    font-size: 12px;
+  }
+  
+  /* MEDIA */
+  @media screen and (max-width: 768px) {
+    .dashboardRecepe {
+      width: 90%;
+    }
+    .bodyCard > div {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }

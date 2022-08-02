@@ -1,45 +1,82 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
-import {setContext} from '@apollo/client/link/context';
-import SearchRecipes from './pages/SearchRecipes';
-import SavedRecipes from './pages/SavedRecipes';
-import Navbar from './components/Navbar';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const httpLink = createHttpLink({
-  uri: '/graphql',
-})
+import Firebase from "./config/Firebase";
 
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem('id_token');
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : '',
-    },
-  };
-});
+import Dashboard from "./pages/Dashboard";
+import LandingPage from "./pages/LandingPage";
+import NoMatch from "./pages/NoMatch";
+import RecipePage from "./pages/RecipePage";
+import HealthyHelper from "./pages/HealthyHelper";
+import Manage from "./pages/ManageMeals";
 
-const client = new ApolloClient({
-  link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: "",
+      isAnonymous: false
+    };
+  }
 
-function App() {
-  return (
-    <ApolloProvider client={client}>
+  componentDidMount() {
+    this.authListener();
+  }
+
+  componentWillMount() {
+    this.authListener();
+  }
+
+  authListener() {
+    Firebase.auth().onIdTokenChanged(user => {
+
+      if (user) {
+        this.setState({ user });
+        localStorage.setItem("user", user.uid);
+        localStorage.setItem("isAnonymous", user.isAnonymous);
+      } else {
+        this.setState({ user: null });
+        localStorage.removeItem("user");
+        localStorage.removeItem("isAnonymous");
+      }
+    });
+  }
+
+  render() {
+    return (
       <Router>
         <>
-          <Navbar />
+          {this.state.user || localStorage.getItem("user") ? (
+            <>
+              {this.state.isAnonymous ||
+              !localStorage.getItem("isAnonymous") ? (
+                <Switch>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route exact path="/search" component={HealthyHelper} />
+                  <Route exact path="/recipe/:id" component={RecipePage} />
+                  <Route component={NoMatch} />
+                </Switch>
+              ) : (
+                <Switch>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route exact path="/search" component={HealthyHelper} />
+                  <Route exact path="/dashboard" component={Dashboard} />
+                  <Route exact path="/recipe/:id" component={RecipePage} />
+                  <Route exact path="/manage" component={Manage} />
+                  <Route component={NoMatch} />
+                </Switch>
+              )}
+            </>
+          ) : (
             <Switch>
-              <Route exact path='/' component={SearchRecipes} />
-              <Route exact path='/saved' component={SavedRecipes} />
-              <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
+              <Route exact path="/" component={LandingPage} />
+              <Route component={NoMatch} />
             </Switch>
+          )}
         </>
       </Router>
-    </ApolloProvider>
-  );
+    );
+  }
 }
 
 export default App;
