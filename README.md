@@ -76,7 +76,7 @@ Additionally, the latest updates allow for the user to plan weeekly meals, with 
 
 - [ ] Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
 
-- [ ] Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
+- [x] Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
 
 - [x] Application includes user authentication using JWT.
 
