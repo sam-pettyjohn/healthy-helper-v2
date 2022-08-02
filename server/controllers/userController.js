@@ -130,3 +130,7 @@ module.exports = {
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));
       },
+      createPreferences: function(req, res) {
+        preferences = req.body.preferences;
+        // console.log("formulated Obj:", prefereneces);
+      }
