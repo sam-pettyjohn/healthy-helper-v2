@@ -1,0 +1,30 @@
+{
+  "name": "healthy-helper-v2-master",
+  "version": "1.0.0",
+  "description": "healthy-helper-v2",
+  "main": "config.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "firebase": "^9.9.1",
+    "if-env": "^1.0.4",
+    "immutability-helper": "^3.1.1",
+    "mongoose": "^6.5.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19",
+    "twilio": "^3.80.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
