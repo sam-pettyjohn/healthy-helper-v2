@@ -5,7 +5,7 @@ import { saveRecipeIds, getSavedRecipeIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/client';
 import { SAVE_RECIPE } from '../utils/mutations';
 
-const SearchRecipe = () => {
+const SearchRecipes = () => {
   // create state for holding returned EDAMAM api data
   const [searchedRecipe, setSearchedRecipe] = useState([]);
   // create state for holding our search field data
@@ -46,7 +46,7 @@ const SearchRecipe = () => {
         image: recipeInfo.recipe.image || '',
       }));
 
-      setSearchedRecipes(bookRecipe);
+      setSearchedRecipe(bookRecipe);
       setSearchInput('');
     } catch (err) {
       console.error(err);
