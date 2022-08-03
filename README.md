@@ -3,9 +3,9 @@
 # Healthy Helper 2.0
 
 ## Purpose
-The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as allergy specifications, diet preferences and ability to save user information and receipes.
+The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as diet restrictions and preferences, ability to save user information and receipes, and overall provide a more cohesive User Experience.
 
-We utilized our goals that we initially set 4 months ago as our inspiration to improve work we had already created. This allowed for reflection on growth and skill level obtained over these previous 4 months, as well as provided an opportunity to dive deeper into a creative realm of developing a useful application. 
+We utilized our goals that we initially set 4 months ago as our inspiration to improve the work we had already started. This allowed for reflection on growth and skill level obtained since then, as well as provided an opportunity to dive deeper into the creative realm of developing a useful application. 
 
 ## Table of Contents
 
