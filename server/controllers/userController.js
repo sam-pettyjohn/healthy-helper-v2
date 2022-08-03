@@ -1,7 +1,9 @@
 const db = require("../models");
 const axios = require("axios");
 const config = require("../config");
+
 let preferences;
+
 const twilio = require("twilio");
 const client = new twilio(config.accountSid, config.authToken);
 const nodemailer = require("nodemailer");
@@ -61,8 +63,6 @@ module.exports = {
     let searchRange =
       "&from=" + req.body.fromNumber + "&to=" + req.body.toNumber;
     let query = "q=" + req.body.searchQuery;
-    // console.log(apiURL + query + apiID + apiKey + searchRange + diet + allergy);
-
     axios
       .get(apiURL + query + apiID + apiKey + searchRange + diet + allergy)
       .then(response => {
@@ -73,6 +73,7 @@ module.exports = {
         }
       });
   },
+
   updateFavorites: function(req, res) {
     db.User.findOne({
       email: req.params.user,
@@ -97,6 +98,7 @@ module.exports = {
       }
     });
   },
+
   updateMeal: function(req, res) {
     let day = req.body.day;
     let meal = req.body.meal;
@@ -114,6 +116,7 @@ module.exports = {
       }
     );
   },
+
   updateMenu: function(req, res) {
     db.User.findOneAndUpdate(
       { email: req.params.user },
@@ -122,6 +125,7 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
   updateSettings: function(req, res) {
     db.User.findOneAndUpdate(
       { email: req.params.user },
@@ -130,10 +134,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  
   createPreferences: function(req, res) {
     preferences = req.body.preferences;
-    // console.log("Forumalated Obj: ", preferences);
   },
+
+  // twilio send text message to user WIP
   sendSMS: function(req, res) {
     client.messages
       .create({
@@ -143,6 +149,8 @@ module.exports = {
       })
       .then(message => res.json(message.sid));
   },
+
+  // twilio send via email to user QWIP
   sendEmail: function(req, res) {
     let email = req.body.email.trim();
     const transporter = nodemailer.createTransport({
@@ -170,6 +178,8 @@ module.exports = {
       }
     });
   },
+
+  // delete meal and update db
   removeMeal: function(req, res) {
     let day = req.body.day;
     let meal = req.body.meal;
