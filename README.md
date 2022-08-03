@@ -2,15 +2,20 @@
 
 # Healthy Helper 2.0
 
+## Purpose
+The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as allergy specifications, diet preferences and ability to save user information and receipes.
+
+We utilized our goals that we initially set 4 months ago as our inspiration to improve work we had already created. This allowed for reflection on growth and skill level obtained over these previous 4 months, as well as provided an opportunity to dive deeper into a creative realm of developing a useful application. 
+
 ## Table of Contents
 
 - [Healthy Helper 2.0](#healthy-helper-20)
-  - [Table of Contents](#table-of-contents)
   - [Purpose](#purpose)
+  - [Table of Contents](#table-of-contents)
     - [Challenges](#challenges)
     - [Successes](#successes)
   - [Objectives](#objectives)
-  - [User Story](#user-story)
+  - [Project Update](#project-update)
     - [Additional Criteria](#additional-criteria)
     - [Mock-Up](#mock-up)
     - [Website](#website)
@@ -18,10 +23,6 @@
   - [Collaborators](#collaborators)
   - [License](#license)
 
-## Purpose
-The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as allergy specifications, diet preferences and ability to save user information and receipes.
-
-We utilized our goals that we initially set 4 months ago as our inspiration to improve work we had already created. This allowed for reflection on growth and skill level obtained over these previous 4 months, as well as provided an opportunity to dive deeper into a creative realm of developing a useful application. 
 
 ### Challenges: 
 - Schedules (different time zones, life, work)
@@ -43,7 +44,7 @@ THEN I am able to create a new user with saved data being encrypted
 GIVEN that I want to plan my weekly calendar
 THEN I am able to save receipes for different days of the week.
 ```
-## User Story 
+## Project Update
 
 Healthy Helper Version 2.0 seeks to help enhance the audience base by incorporating new categorization features such as:
 
