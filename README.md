@@ -1,14 +1,14 @@
 ![MIT](https://img.shields.io/badge/License-MIT-blue)
 
-# Healthy Helper Version 2.0
+# Healthy Helper 2.0
 
 ## Table of Contents
 
-- [Healthy Helper Version 2.0](#healthy-helper-version-20)
+- [Healthy Helper 2.0](#healthy-helper-20)
   - [Table of Contents](#table-of-contents)
   - [Purpose](#purpose)
-    - [Challenges:](#challenges)
-    - [Successes:](#successes)
+    - [Challenges](#challenges)
+    - [Successes](#successes)
   - [Objectives](#objectives)
   - [User Story](#user-story)
     - [Additional Criteria](#additional-criteria)
