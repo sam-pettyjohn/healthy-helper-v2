@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// recipe Schema
+// define recipe schema
 const recipe = new Schema({
   uri: String,
   calories: String,
@@ -16,7 +16,7 @@ const recipe = new Schema({
   _id: false
 });
 
-// user Schema
+// define user schema
 const userSchema = new Schema({
   email: String,
   favorites: [recipe],
@@ -29,37 +29,44 @@ const userSchema = new Schema({
     alcohol_free: Boolean,
     dietType: String
   },
+
   weeklymenu: {
     monday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     tuesday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     wednesday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     thursday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     friday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     saturday: {
       breakfast: recipe,
       lunch: recipe,
       dinner: recipe
     },
+
     sunday: {
       breakfast: recipe,
       lunch: recipe,
