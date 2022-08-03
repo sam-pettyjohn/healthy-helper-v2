@@ -9,7 +9,6 @@ var config = {
   databaseURL: "https://healthyhelperv2.firebaseio.com",
   projectId: "healthyhelperv2",
   storageBucket: "healthyhelperv2.appspot.com",
-  messagingSenderId: "271873144564",
   appId: "1:271873144564:web:7b424cb4b2928e794890a1",
   messagingSenderId: "G-7D67GQFD37"
 };
