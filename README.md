@@ -156,7 +156,7 @@ Fulfilling all three of the following requirements to turn your app into a PWA w
 
 ## Collaborators
 
-- James Huang: [Visit their GitHub Repo here](https://github.com/mrxanthic)
+- James Huang: [Visit their GitHub Repo here](https://github.com/jameshuang0)
 - Adriana Pena: [Visit their GitHub Repo here](https://github.com/adrianapvent)
 - Sam Pettyjohn: [Visit their GitHub Repo here](https://github.com/sam-pettyjohn)
 
