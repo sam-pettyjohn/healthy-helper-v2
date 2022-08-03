@@ -1,5 +1,3 @@
-// DONT FORGET !! SEND .ENV FILE TO GROUP
-
 require("dotenv").config();
 
 module.exports = {
