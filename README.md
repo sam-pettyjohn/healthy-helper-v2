@@ -3,7 +3,7 @@
 # Healthy Helper 2.0
 
 ## Purpose
-The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as diet restrictions and preferences, ability to save user information and receipes, and overall provide a more cohesive User Experience.
+The purpose of this project was to enhance our group project #1, by incorporating new features that allow refinements such as diet restrictions and preferences, ability to save user information, and overall provide a more cohesive User Experience.
 
 We utilized our goals that we initially set 4 months ago as our inspiration to improve the work we had already started. This allowed for reflection on growth and skill level obtained since then, as well as provided an opportunity to dive deeper into the creative realm of developing a useful application. 
 
@@ -88,7 +88,7 @@ Save recipe (planned)
 
 Satisfies the following code requirements:
 - [x] Application uses React for the front end.
-- [ ] Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
+- [-] Application has a GraphQL API with a Node.js and Express.js server, and uses queries and mutations for retrieving, adding, updating, and deleting data.
 - [x] Application uses MongoDB and the Mongoose ODM for the database and protects sensitive API key information on the server.
 - [x] Application includes user authentication using JWT.
 
@@ -99,9 +99,9 @@ Satisfies the following code requirements:
 
 **Deployment: 20%**
 
-- [ ] Application deployed at live URL on Heroku and loads with no errors.
-- [ ] Application GitHub URL submitted.
-- [ ] Portfolio at live URL submitted, featuring project.
+- [x] Application deployed at live URL on Heroku and loads with no errors.
+- [x] Application GitHub URL submitted.
+- [x] Portfolio at live URL submitted, featuring project.
 
 **Repository Quality: 10%**
 
@@ -139,7 +139,7 @@ Fulfilling all three of the following requirements to turn your app into a PWA w
 ![image](.)
 
 ### Website
-`TBD`
+https://healthy-helper-v2.herokuapp.com/
 
 ## Built With
 
