@@ -1,15 +1,9 @@
-// require("dotenv").config();
+require("dotenv").config();
 
 module.exports = {
-  accountSid: "AC93b1783c234c0ca311b2067e54ec3f5d",
-  authToken: "5bda67fe7c7410825a2853cfce7a956d",
-  twilioNumber: "9032167606",
-  email: "sammpj47@gmail.com",
-  password: "pbJ7J.2K?Q's?ju!47"
+  accountSid: process.env.TWILIO_ACCOUNT_SID,
+  authToken: process.env.TWILIO_AUTH_TOKEN,
+  twilioNumber: process.env.TWILIO_NUMBER,
+  email: process.env.EMAIL,
+  password: process.env.PASSWORD
 };
-
-// TWILIO_ACCOUNT_SID="AC93b1783c234c0ca311b2067e54ec3f5d"
-// TWILIO_AUTH_TOKEN="5bda67fe7c7410825a2853cfce7a956d"
-// TWILIO_NUMBER="9032167606"
-// EMAIL="sammpj47@gmail.com"
-// PASSWORD="pbJ7J.2K?Q's?ju!47"

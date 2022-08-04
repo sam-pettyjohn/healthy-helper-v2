@@ -69,7 +69,8 @@ Including Diet Types, users can also add additional filter queries by Diet Restr
 
 WIP/MVP Features:
 Save recipe (planned)
-- Assign recipe for which meal on any day of the week
+- Save recipe to dashboard, which will add list of ingredients for user to easily view.
+- Assign recipe for which meal on any day of the week.
 - Send automated list of the required ingredients to the user's phone.
 
 ### Additional Criteria
@@ -126,17 +127,17 @@ Satisfies the following code requirements:
 **Collaboration 10%**
 - [x] There are no major disparities in the number of GitHub contributions among group members.
 
-**Bonus**
-Fulfilling all three of the following requirements to turn your app into a PWA will add 10 points to your grade. Note that the highest grade you can achieve is still a 100:
-
-- [ ] Uses a web manifest
-- [ ] Uses a service worker for offline functionality
-- [ ] Is installable
-
 
 ### Mock-Up
 
-![image](.)
+Mockup of Landing Page
+![image](./client/assets/images/landingpage.png)
+<br><br>
+Mockup of Returned Recipes based on User Query
+![image](./client/assets/images/recipes.png)
+<br><br>
+Mockup of User Dashboard (WIP)
+![image](./client/assets/images/userdashboard.png)
 
 ### Website
 https://healthy-helper-v2.herokuapp.com/
